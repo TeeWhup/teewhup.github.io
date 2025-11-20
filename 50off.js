@@ -11,9 +11,9 @@
   let escapeCooldown = false;
 
   // ===== Звуки =====
-  const snd1 = new Audio("N0.MP3");
-  const snd2 = new Audio("NO2.MP3");
-  const snd3 = new Audio("Not_doing_it.MP3");
+  const snd1 = new Audio("N0.mp3");
+  const snd2 = new Audio("NO2.mp3");
+  const snd3 = new Audio("Not_doing_it.mp3");
 
   // ===== Воспроизведение отрезка звука =====
   function playSegment(audio, start, end){
@@ -164,4 +164,5 @@
   });
 
 })();
+
 
