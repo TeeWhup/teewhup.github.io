@@ -1,0 +1,52 @@
+#magic-btn {
+  position: fixed;
+  right: 20px;
+  top: 40%;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, #ff6b6b, #c0392b);
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.22s ease;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.35);
+  z-index: 9999;
+}
+
+#magic-btn span.big {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 24px;
+}
+
+#magic-btn span.small {
+  font-size: 16px;
+  opacity: 0.8;
+}
+
+@keyframes shake-angry {
+  0% { transform: translate(0px,0px) rotate(0deg); }
+  20% { transform: translate(-4px,1px) rotate(-4deg); }
+  40% { transform: translate(4px,-1px) rotate(4deg); }
+  60% { transform: translate(-3px,2px) rotate(-3deg); }
+  80% { transform: translate(3px,-2px) rotate(4deg); }
+  100% { transform: translate(0px,0px) rotate(0deg); }
+}
+
+.explosion-frame {
+  position: fixed;
+  background-image: url('sprite.png');
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  pointer-events: none;
+  z-index: 10000;
+}
+.explosion-animate {
+  animation: explode 0.8s steps(16) forwards;
+}
